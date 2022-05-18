@@ -1,0 +1,83 @@
+.features{
+    width: 80%;
+    height: 100%;
+    margin:auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding:5rem;
+}
+.features .wrapper{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    color: rgb(54, 54, 54);
+    
+}
+.features .wrapper .icon{
+    font-size:3rem;
+    color: orange;
+}
+.features .wrapper h1{
+    text-transform: uppercase;
+
+}
+.features .block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features .block .image{
+    flex: 1;
+    background-image: url("../../../public/images/71nhblpAAJL._SL1500_.jpg");
+    background-size: contain;
+    width: 450px;
+    height: 500px;
+    background-repeat: no-repeat;
+   
+}
+.features .block .content{
+    flex: 1;
+
+}
+.features .block .content ul li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 1rem;
+}
+.features .block .content ul li .list-style{
+     font-size: 3rem;
+     margin: 1rem;
+     color: orange;
+     transition: all 0.5s ease-in-out;
+    
+}
+.features .block .content ul li .list-style:hover{
+    transform: scale(1.1)
+
+}
+.features .block .content ul li .heading{
+    font-size:1.5rem;
+    font-weight:250;
+    color: var(--form-button);
+    text-transform:uppercase;
+
+}
+.features .block .content ul li p{
+    color: rgb(54, 54, 54);
+}
+@media  screen and (max-width:1200px) {
+
+    .features .block .image{
+        display: none;
+    }
+}
+@media  screen and (max-width:800px){
+    .features{
+        padding:1rem;
+    }
+}

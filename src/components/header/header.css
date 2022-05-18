@@ -1,0 +1,128 @@
+.header{
+    height: 90vh;
+    width: 100%;
+    color: #ccc;
+    
+    background-color: var(--dark-blue);
+}
+.header .wrapper{
+    width: 70%;
+    height: inherit;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    padding:2rem;
+    
+}
+.header .wrapper .content{
+    flex: 4.5;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:left;
+   
+    width:100%;
+    height:inherit;
+   
+}
+.header .wrapper .content #boldtext{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.header .wrapper .content #thintext{
+    font-weight:100;
+    text-transform: uppercase;
+    position: relative;
+    margin: 2rem 0;
+    border-bottom: 0.1em solid #ccc;
+    margin: .5em auto 0;
+    padding: 1rem;
+}
+.header .wrapper .content p{
+    margin: 2rem;
+}
+.header .wrapper .content .buttongroup{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    flex-wrap: wrap;
+
+}
+.header .wrapper .content .buttongroup .button{
+    border: 1px solid #ccc;
+    padding:.5rem;
+    text-transform: capitalize;
+    width:10rem;
+    text-align: center;
+    margin:1rem 2rem 1rem 0rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.header .wrapper .content .buttongroup .button:hover{
+    box-shadow: inset 0 -7em 0 white;
+    color: var(--dark-blue);
+}
+
+
+.header .wrapper .container{
+    flex: 5.5;
+    height:inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.header .wrapper .container .image{
+    background-image: url("../../../public/images/Android-Mobile-Download-Free-PNG.png");
+    width:100%;
+    height: 100%;
+    background-size:contain;
+    background-repeat:no-repeat;
+ 
+    transition: all 0.5s ease-in-out; 
+}
+.header .wrapper .container .image:hover{
+    transform:scale(1.05)
+}
+@media screen and (max-width:1200px) {
+    .header .wrapper .content h1{
+        font-size:2rem;
+    }
+    .header .wrapper .container {
+        width:80%;
+        height:80%;
+    }
+    
+}
+@media screen and (max-width:1400px){
+    .header{
+        height:150vh;
+    }
+    .header .wrapper{
+        flex-direction:column;
+    }
+    .header .wrapper .content{
+        
+        align-items:center;
+        display: flex;
+ 
+    }
+}
+@media screen and (max-width:700px){
+    .header .wrapper .content {
+        margin:0;
+        padding:0;
+        text-align:center;
+        
+    }
+    .header .wrapper .content .buttongroup{
+        align-items:center;
+        display:flex;
+        justify-content:center;
+    }
+    .header .wrapper .content h1{
+       font-size: 1.3rem;
+    }
+}
